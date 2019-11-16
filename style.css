@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(68,75,99);
+    color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-color: #282a316b;
+}
+
+.header--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 700ms;
+    position: relative;
+    margin-left: 30px;
+    background-color: #000;
+    margin: 10px 0px 10px 30px;
+    padding: 2px 9px 0 14px;
+}
+
+.logo::before {
+    content: 'DC';
+    position: absolute;
+    color: #ffffff;
+    background-color: #1c3fb7;
+    padding: 0 2px;
+    left: -30px;
+    transition: all 600ms;
+}
+
+.logo:hover::before {
+    content: 'JS';
+    position: absolute;
+    color: #0c0c0c;
+    background-color: #f7df1e;
+    padding: 0 2px;
+    left: -30px;
+    transform: rotate(360deg);
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__links {
+    margin-top: 9px;
+    margin-bottom: 7px;
+    padding: 6px 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 400ms;
+    border: 1px solid #fff;
+}
+
+.menu__links:hover {
+    color: #ff2b43;
+}
+
+.head-wrapper {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.main-top {
+    background-color: #444b63;
+    background-image: url(images/top-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    max-width: 1140px;
+    margin: 0 auto;
+    -webkit-box-shadow: inset 0px 0px 51px 61px rgba(68,75,99,1);
+    -moz-box-shadow: inset 0px 0px 64px 39px rgba(68,75,99,1);
+    box-shadow: inset 0px 0px 51px 61px rgba(68,75,99,1);
+}
+
+.logo-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 20px;
+}
+
+.logoMin {
+    height: 60px;
+    width: 68px;
+}
+
+.head-text {
+    text-align: center;
+    display: block;
+    font-size: 21px;
+    margin: 0 0;
+    padding: 30px 0;
+}
+
+h1.head-title {
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 38px;
+}
+
+p.head-paragraf-text {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer {
+    padding: 25px 0;
+    background-color: #18191d57;
+    border-top: 1px solid #262627;
+}
+
+.footer--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.informBlock-text {
+    background-color: #fff;
+    color: #444b63;
+    padding: 30px;
+    line-height: 1.5;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: inset 0 -3px 0 rgba(84, 94, 111, 0.83);
+}
+
+.main-promo {
+    margin-top: 40px;
+    padding: 50px 10px 60px;
+    background: -webkit-linear-gradient(-45deg,#7a627d 0%,#444b63 100%);
+    background: -moz-linear-gradient(-45deg,#7a627d 0%,#444b63 100%);
+    background: -o-linear-gradient(-45deg,#7a627d 0%,#444b63 100%);
+    background: linear-gradient(-45deg,#7a627d 0%,#444b63 100%);
+}
+
+#promo {
+    padding: 13px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0;
+    width: 320px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btn-promo {
+    padding: 13px 30px;
+    border: 0;
+    background-color: #ff2b43;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-promo:hover {
+    background-color: #862bff;
+}
+
+
+.input-block {
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(42, 88, 123, 0);
+    position: relative;
+}
+
+.wrong-mail {
+    position: absolute;
+    top: 15px;
+    color: #ff2b43;
+    right: 135px;
+    font-size: 12px;
+}
+
+.text-promo {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+span.discount-text {
+    background-color: #ff2b43;
+    padding: 1px 4px;
+    display: inline-block;
+}
+
+h3.courses-title {
+    text-align: center;
+    line-height: 4;
+    font-size: 26px;
+}
+
+.courses-block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.courses-col {
+    background-color: #444b63;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.5;
+    width: 30%;
+    font-size: 16px;
+    border: 1px dotted #fff;
+}
+
+.courses-col .logoMin {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.title-time {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+div#mentors {
+    background: linear-gradient(-45deg,#131313 0%,#444b63 100%);
+    padding-bottom: 40px;
+}
+div#pricing {
+    padding-bottom: 40px;
+    background: linear-gradient(-45deg,#7a627d 0%,#444b63 100%);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #444b63;
+    margin-bottom: 30px;
+    border: 1px dotted #fff;
+}
+
+.price-row:hover {
+    background-color: #3f5499;
+}
+
+.btn-registration {
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+
+}
+
+.btn-registration:hover {
+    background-color: #862bff;
+    border: 2px solid transparent;
+}
+
+.price-stick {
+    font-size: 45px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+span.span-old-price {
+    text-decoration: line-through;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.modal-area-registration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 75, 99, 0.62);
+    z-index: 9999;
+}
+
+.modal-window {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(33, 150, 243, 0.08), 0 4px 8px rgba(0,0,0,0.22);
+    margin-top: 16%;
+    position: relative;
+}
+
+.input.form_modal input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.input_btn.form_modal {
+    width: 100%;
+}
+
+.btn-signUp {
+    display: block;
+    padding: 10px;
+    background-color: #ff2b43;
+    outline: none;
+    border: 0;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-signUp:hover {
+    background-color: #862bff;
+}
+
+.input-class {
+    position: relative;
+}
+
+.wrongRegData {
+    position: absolute;
+    color: #ff2b43;
+    right: 10px;
+    top: 10px;
+}
+
+.registration-title {
+    color: #444b63;
+    font-size: 23px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#close-modal-window {
+    color: #ffffff;
+    background-color: #444b63;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#close-modal-window:hover {
+    background-color: #3f5499;
+}
+
+.hide {
+    display: none;
+}
+
+#user-block {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#user-block:hover {
+    color: #ff2b43;
+}
+
+.modal-area-user {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 75, 99, 0.62);
+    z-index: 9999;
+}
+
+#modal-user-block {
+    color: #444b63;
+}
+
+#close-user-window {
+    color: #ffffff;
+    background-color: #444b63;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#close-user-window:hover {
+    background-color: #3f5499;
+}
+
+@keyframes bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+
+  .bounce {
+    animation: bounce 1.2s infinite alternate;
+  }
+
+  div#infoUserBlock {
+    margin-bottom: 20px;
+}
+
+  @media all and (max-width: 800px) {
+
+    .courses-block {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .courses-col {
+        background-color: #444b63;
+        color: #ffffff;
+        padding: 20px;
+        line-height: 1.5;
+        width: 100%;
+        font-size: 16px;
+        border: 1px dotted #fff;
+        margin-bottom: 20px;
+    }
+
+    #promo {
+        padding: 13px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 0;
+        width: 230px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .btn-promo {
+        padding: 13px 10px;
+        border: 0;
+        background-color: #ff2b43;
+        color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .price-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #444b63;
+        margin-bottom: 30px;
+    }
+
+    .price-stick {
+        font-size: 30px;
+        margin-top: 4px;
+        margin-left: 15px;
+        margin-right: 18px;
+    }
+
+    .btn-registration {
+        font-weight: 600;
+        border-radius: 12px;
+        padding: 8px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        margin: 10px 0;
+    }
+
+    span.span-old-price {
+        text-decoration: line-through;
+        font-size: 18px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+  }

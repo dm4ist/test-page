@@ -1,0 +1,17 @@
+[
+    {
+      "url": "images/mentor.svg",
+      "title": "John React",
+      "description" : "I'm an experienced JavaScript developer, team leader and mentor, currently focusing on react/redux stack. In my career, I've worked on single-page applications, websites, mobile and desktop apps, games and tools.."
+    },
+    {
+      "url": "images/mentor.svg",
+      "title": "Bill Angular",
+      "description": "I have been programming for decades and have experience in quite a few languages, and lately my passion has been JavaScript and web development in general."
+    },
+    {
+      "url": "images/mentor.svg",
+      "title": "Anna Node",
+      "description": "Software engineer, an enthusiast in frontend engineering. Loves universal Javascript. Experienced in Web(sites/apps) development, SPAs, Node.js, desktop, and mobile development."
+    }
+]
